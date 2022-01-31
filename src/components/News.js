@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import Newsitems from './Newsitems'
 import PropTypes from 'prop-types'
 
-
+let API = "<Your_API_KEY>";
 export class News extends Component {
-
+  
     static defaultProps={
         country: 'in',
         pageSize: 9,
@@ -28,14 +28,14 @@ export class News extends Component {
         };
     }
     async componentDidMount() {
-        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&from=2021-12-15&to=2021-12-15&sortBy=popularity&apiKey=4f5f88aa667c490e90c2c2b1213f6bc6&pageSize=${this.props.pageSize}`
+        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&from=2021-12-15&to=2021-12-15&sortBy=popularity&apiKey=${API}&pageSize=${this.props.pageSize}`
         let data = await fetch(url)
         let dataParse = await data.json()
         this.setState({ articles: dataParse.articles })
     }
     
     previousClick = async () => {
-        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&from=2021-12-15&to=2021-12-15&sortBy=popularity&apiKey=4f5f88aa667c490e90c2c2b1213f6bc6&page=${this.state.page - 1}&pageSize=${this.props.pageSize}`
+        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&from=2021-12-15&to=2021-12-15&sortBy=popularity&apiKey=${API}&page=${this.state.page - 1}&pageSize=${this.props.pageSize}`
         let data = await fetch(url)
         let dataParse = await data.json()
         this.setState({
@@ -49,7 +49,7 @@ export class News extends Component {
             
         }
         else {
-            let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&from=2021-12-15&to=2021-12-15&sortBy=popularity&apiKey=4f5f88aa667c490e90c2c2b1213f6bc6&page=${this.state.page + 1}&pageSize=${this.props.pageSize}`
+            let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&from=2021-12-15&to=2021-12-15&sortBy=popularity&apiKey=${API}&page=${this.state.page + 1}&pageSize=${this.props.pageSize}`
             let data = await fetch(url)
             let dataParse = await data.json()
             this.setState({
@@ -64,6 +64,7 @@ export class News extends Component {
     render() {
      
         return (
+            <>
             <div className='container my-3'>
                 <h2>News Api - Headline</h2>
                 <div className='row'>
@@ -79,6 +80,7 @@ export class News extends Component {
                     <button disabled={this.state.page + 1 > Math.ceil(this.state.totalResults / 20)} type="button" onClick={this.nextClick} className="btn btn-warning">Next &rarr; </button>
                 </div>
             </div>
+            </>
         )
     }
 }
