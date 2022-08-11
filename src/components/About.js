@@ -5,9 +5,14 @@ const About = () => {
     <div>
 
 
-            <section className="bg-voilets text-white">
-                <div className="container">
+                <div className='background' >
+            <section className=" text-white">
+                <div className="container ">
                     <div className="row d-flex align-items-center">
+                    {/* <div className="col-md-5 col-xl-5 offset-xl-1">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/slides/080.webp" className="img-responsive" width="100%" />
+
+                        </div> */}
                         <div className="col-md-7 col-xl-6">
                             <small>FULLY CUSTOMIZABLE</small>
                             <h1><b>Manage all your media files using NextApp</b></h1>
@@ -17,13 +22,12 @@ const About = () => {
                                 <li className="list-inline-item"> <button type="button" className="btn btn-success btn-lg">Get Started</button></li>
                             </ul>
                         </div>
-                        <div className="col-md-5 col-xl-5 offset-xl-1">
-                            <img src="http://theme-village.com/html/nicksa/nicksa/images/components/feature-2.png" className="img-responsive" width="100%" />
-
-                        </div>
+                      
                     </div>
                 </div>
+
             </section>
+                </div>
             <section className="py-5">
                 <div className="container py-5">
                     <div className="mb-4"></div>

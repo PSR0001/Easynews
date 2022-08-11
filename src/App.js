@@ -10,6 +10,7 @@ import Navbar from './components/Navbar';
 import News from './components/News';
 import About from './components/About';
 import Footer from './components/Footer';
+import Home from './components/Home';
 
 export default class App extends Component {
   render() {
@@ -20,7 +21,7 @@ export default class App extends Component {
           <Navbar />
 
           <Switch>
-                <Route exact path="/"><News key="general" pageSize={6} country="in" category="general" /></Route>
+                <Route exact path="/"><Home /></Route>
                 <Route exact path="/About"><About /></Route>
                 <Route exact path="/business"><News key="business" pageSize={6} country="in" category="business" /></Route>
                 <Route exact path="/entertainment"><News key="entertainment" pageSize={6} country="in" category="entertainment" /></Route>
