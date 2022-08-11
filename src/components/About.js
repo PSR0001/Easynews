@@ -66,7 +66,7 @@ const About = () => {
 
                         </div>
                         <div className="col-md-5 col-xl-5 offset-xl-1">
-                            <img src="https://dsathemes.com/html/nextapp/files/images/image-02.png"/>
+                            <img src="https://dsathemes.com/html/nextapp/files/images/image-02.png" alt='Mobile.png'/>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ const About = () => {
                 <div className="container">
                     <div className="row d-flex align-items-center">
                         <div className="col-md-7 col-xl-6">
-                            <img src="https://dsathemes.com/html/nextapp/files/images/image-09.png"/>
+                            <img src="https://dsathemes.com/html/nextapp/files/images/image-09.png" alt='Mobile.png'/>
                         </div>
                         <div className="col-md-5 col-xl-5 offset-xl-1">
                             <small>FULLY CUSTOMIZABLE</small>
@@ -106,7 +106,7 @@ const About = () => {
 
                         </div>
                         <div className="col-md-6">
-                            <img src="https://dsathemes.com/html/nextapp/files/images/image-02.png"/>
+                            <img src="https://dsathemes.com/html/nextapp/files/images/image-02.png" alt='Mobile.png'/>
                         </div>
                     </div>
                 </div>
@@ -115,7 +115,7 @@ const About = () => {
                 <div className="container py-5">
                     <div className="row py-5">
                         <div className="col-md-6">
-                            <img src="https://dsathemes.com/html/nextapp/files/images/image-09.png"/>
+                            <img src="https://dsathemes.com/html/nextapp/files/images/image-09.png" alt='Mobile.png'/>
                         </div>
                         <div className="col-md-6">
                             <small>FULLY CUSTOMIZABLE</small>
