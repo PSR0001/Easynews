@@ -8,6 +8,8 @@ import {
 import React, { Component } from 'react'
 import Navbar from './components/Navbar';
 import News from './components/News';
+import About from './components/About';
+import Footer from './components/Footer';
 
 export default class App extends Component {
   render() {
@@ -19,6 +21,7 @@ export default class App extends Component {
 
           <Switch>
                 <Route exact path="/"><News key="general" pageSize={6} country="in" category="general" /></Route>
+                <Route exact path="/About"><About /></Route>
                 <Route exact path="/business"><News key="business" pageSize={6} country="in" category="business" /></Route>
                 <Route exact path="/entertainment"><News key="entertainment" pageSize={6} country="in" category="entertainment" /></Route>
                 <Route exact path="/general"><News key="gff" pageSize={6} country="in" category="general" /></Route>
@@ -27,6 +30,8 @@ export default class App extends Component {
                 <Route exact path="/sports"><News key="sports" pageSize={6} country="in" category="sports" /></Route>
                 <Route exact path="/technology"><News key="technology" pageSize={6} country="in" category="technology" /></Route>
           </Switch>
+
+          <Footer />
         </div>
       </Router>
     )
