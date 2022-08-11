@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Newsitems from './Newsitems'
 import PropTypes from 'prop-types'
 
-let API = "<Your_API_KEY>";
+let API = "554578280c364851bc7b40b4accf332c";
 export class News extends Component {
   
     static defaultProps={
@@ -28,14 +28,15 @@ export class News extends Component {
         };
     }
     async componentDidMount() {
-        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&from=2021-12-15&to=2021-12-15&sortBy=popularity&apiKey=${API}&pageSize=${this.props.pageSize}`
+        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&from=2022-08-11&sortBy=popularity&apiKey=${API}&pageSize=${this.pageSize}`
+        
         let data = await fetch(url)
         let dataParse = await data.json()
         this.setState({ articles: dataParse.articles })
     }
     
     previousClick = async () => {
-        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&from=2021-12-15&to=2021-12-15&sortBy=popularity&apiKey=${API}&page=${this.state.page - 1}&pageSize=${this.props.pageSize}`
+        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&from=2022-08-11&sortBy=popularity&apiKey=${API}&page=${this.state.page - 1}&pageSize=${this.props.pageSize}`
         let data = await fetch(url)
         let dataParse = await data.json()
         this.setState({
@@ -49,7 +50,7 @@ export class News extends Component {
             
         }
         else {
-            let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&from=2021-12-15&to=2021-12-15&sortBy=popularity&apiKey=${API}&page=${this.state.page + 1}&pageSize=${this.props.pageSize}`
+            let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&from=2022-08-11&sortBy=popularity&apiKey=${API}&page=${this.state.page + 1}&pageSize=${this.props.pageSize}`
             let data = await fetch(url)
             let dataParse = await data.json()
             this.setState({
