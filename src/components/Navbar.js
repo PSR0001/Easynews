@@ -30,7 +30,7 @@ export class Navbar extends Component {
                                     <ul className="dropdown-menu bg-dark color-white" aria-labelledby="dropdownMenuButton1">
                                         <li className="nav-item ">
                                             <Link className="nav-link" to="/business">Business</Link>
-                                        </li>
+                                        </li> 
                                         <li className="nav-item">
                                             <Link className="nav-link" to="/entertainment">Entertainment</Link>
                                         </li>
