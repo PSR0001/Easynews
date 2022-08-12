@@ -1,4 +1,9 @@
 import React from 'react'
+import { FiPhoneCall} from 'react-icons/fi';
+import { AiOutlineBell,AiOutlineFileAdd } from 'react-icons/ai';
+
+
+
 
 const Home = () => {
   return (
@@ -31,14 +36,17 @@ const Home = () => {
                     <div className="mb-4"></div>
                     <div className="row text-center">
                         <div className="col-md-4">
+                            <FiPhoneCall />
                             <h5><b>Create Account</b></h5>
                             <p>Nemo ipsam egestas volute fugit dolores quaerat sodales</p>
                         </div>
                         <div className="col-md-4">
+                            <AiOutlineBell />
                             <h5><b>Configure Profile</b></h5>
                             <p>Nemo ipsam egestas volute fugit dolores quaerat sodales</p>
                         </div>
                         <div className="col-md-4">
+                            <AiOutlineFileAdd />
                             <h5><b>Sort Your Files</b></h5>
                             <p>Nemo ipsam egestas volute fugit dolores quaerat sodales</p>
                         </div>

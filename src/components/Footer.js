@@ -1,15 +1,20 @@
 import React from 'react'
 import '../App.css'
+import { AiOutlineFacebook ,AiFillGithub,AiOutlineLinkedin,AiFillTwitterCircle} from 'react-icons/ai';
+
+
+
+
 const Footer = () => {
     return (
         <div>
 
             <section id="footer">
                 <div className="container">
-                    <div className="row text-center text-xs-center text-sm-left text-md-left">
+                    <div className="row text-center text-xs-center text-sm-left text-white text-md-left">
                         <div className="col-xs-12 col-sm-4 col-md-4">
                             <h5>Quick links</h5>
-                            <ul className="list-unstyled quick-links text-grey">
+                            <ul className="list-unstyled quick-links ">
                                 <li>Home</li>
                                 <li>About</li>
                                 <li>FAQ</li>
@@ -40,12 +45,11 @@ const Footer = () => {
                     </div>
                     <div className="row">
                         <div className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-                            <ul className="list-unstyled list-inline social text-center">
-                                <li className="list-inline-item"></li>
-                                <li className="list-inline-item"></li>
-                                <li className="list-inline-item"></li>
-                                <li className="list-inline-item"></li>
-                                <li className="list-inline-item"></li>
+                            <ul className="list-unstyled list-inline social text-center text-white">
+                                <li className="list-inline-item text-lg-left text-white"><AiOutlineFacebook /></li>
+                                <li className="list-inline-item"><AiFillGithub /></li>
+                                <li className="list-inline-item"><AiOutlineLinkedin /> </li>
+                                <li className="list-inline-item"><AiFillTwitterCircle  /> </li>
                             </ul>
                         </div>
                         <hr />
