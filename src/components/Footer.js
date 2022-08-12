@@ -9,43 +9,43 @@ const Footer = () => {
                     <div className="row text-center text-xs-center text-sm-left text-md-left">
                         <div className="col-xs-12 col-sm-4 col-md-4">
                             <h5>Quick links</h5>
-                            <ul className="list-unstyled quick-links">
-                                <li><i className="fa fa-angle-double-right"></i>Home</li>
-                                <li><i className="fa fa-angle-double-right"></i>About</li>
-                                <li><i className="fa fa-angle-double-right"></i>FAQ</li>
-                                <li><i className="fa fa-angle-double-right"></i>Get Started</li>
-                                <li><i className="fa fa-angle-double-right"></i>Videos</li>
+                            <ul className="list-unstyled quick-links text-grey">
+                                <li>Home</li>
+                                <li>About</li>
+                                <li>FAQ</li>
+                                <li>Get Started</li>
+                                <li>Videos</li>
                             </ul>
                         </div>
                         <div className="col-xs-12 col-sm-4 col-md-4">
                             <h5>Quick links</h5>
                             <ul className="list-unstyled quick-links">
-                                <li><i className="fa fa-angle-double-right"></i>Home</li>
-                                <li><i className="fa fa-angle-double-right"></i>About</li>
-                                <li><i className="fa fa-angle-double-right"></i>FAQ</li>
-                                <li><i className="fa fa-angle-double-right"></i>Get Started</li>
-                                <li><i className="fa fa-angle-double-right"></i>Videos</li>
+                                <li>Home</li>
+                                <li>About</li>
+                                <li>FAQ</li>
+                                <li>Get Started</li>
+                                <li>Videos</li>
                             </ul>
                         </div>
                         <div className="col-xs-12 col-sm-4 col-md-4">
                             <h5>Quick links</h5>
                             <ul className="list-unstyled quick-links">
-                                <li><i className="fa fa-angle-double-right"></i>Home</li>
-                                <li><i className="fa fa-angle-double-right"></i>About</li>
-                                <li><i className="fa fa-angle-double-right"></i>FAQ</li>
-                                <li><i className="fa fa-angle-double-right"></i>Get Started</li>
-                                <li><i className="fa fa-angle-double-right"></i>Imprint</li>
+                                <li>Home</li>
+                                <li>About</li>
+                                <li>FAQ</li>
+                                <li>Get Started</li>
+                                <li>Imprint</li>
                             </ul>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
                             <ul className="list-unstyled list-inline social text-center">
-                                <li className="list-inline-item"><i className="fa fa-facebook"></i></li>
-                                <li className="list-inline-item"><i className="fa fa-twitter"></i></li>
-                                <li className="list-inline-item"><i className="fa fa-instagram"></i></li>
-                                <li className="list-inline-item"><i className="fa fa-google-plus"></i></li>
-                                <li className="list-inline-item"><i className="fa fa-envelope"></i></li>
+                                <li className="list-inline-item"></li>
+                                <li className="list-inline-item"></li>
+                                <li className="list-inline-item"></li>
+                                <li className="list-inline-item"></li>
+                                <li className="list-inline-item"></li>
                             </ul>
                         </div>
                         <hr />

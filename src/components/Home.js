@@ -31,17 +31,14 @@ const Home = () => {
                     <div className="mb-4"></div>
                     <div className="row text-center">
                         <div className="col-md-4">
-                            <i className="fa fa-phone fa-4x text-voilet mb-4"></i>
                             <h5><b>Create Account</b></h5>
                             <p>Nemo ipsam egestas volute fugit dolores quaerat sodales</p>
                         </div>
                         <div className="col-md-4">
-                            <i className="fa fa-bell-o fa-4x text-voilet mb-4"></i>
                             <h5><b>Configure Profile</b></h5>
                             <p>Nemo ipsam egestas volute fugit dolores quaerat sodales</p>
                         </div>
                         <div className="col-md-4">
-                            <i className="fa fa-clone fa-4x text-voilet mb-4"></i>
                             <h5><b>Sort Your Files</b></h5>
                             <p>Nemo ipsam egestas volute fugit dolores quaerat sodales</p>
                         </div>
